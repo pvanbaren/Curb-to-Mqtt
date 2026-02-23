@@ -1,3 +1,13 @@
+## ⚠️ UPDATE – February 23, 2026
+
+Curb's API currently appears to be unavailable.  
+The support email (support@energycurb.com) is also unreachable.
+
+It is possible that the service has been discontinued or temporarily shut down.  
+At this time, all integrations depending on the API are not functioning.
+
+If you have any additional information or updates, please share them via Issues.
+
 # **Curb-to-Mqtt**
 ![Github-Mqtt](https://github.com/luisgarcia87/Curb-to-Mqtt/blob/main/Curb-to-Mqtt-small.png)
 
