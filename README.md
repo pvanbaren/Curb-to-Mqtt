@@ -1,3 +1,14 @@
+## ⚠️ UPDATE – February 24, 2026
+EMAIL RESPONSE FROM CURB:
+
+Dear Curb Customer,
+ 
+We regret to inform you that Curb's cloud support has been discontinued. Any active subscriptions have been cancelled with the remainder of the current period refunded.
+ 
+There are no plans at this time to restore support for your device.
+
+CURB team,
+
 ## ⚠️ UPDATE – February 23, 2026
 
 Curb's API currently appears to be unavailable.  
