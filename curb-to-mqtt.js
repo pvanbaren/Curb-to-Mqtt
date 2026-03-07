@@ -97,7 +97,7 @@ function publishDiscovery(mqttClient) {
         const payload = {
             name: circuitName(i),
             unique_id: objId,
-            object_id: objId,
+            default_entity_id: `sensor.${objId}`,
             state_topic: stateTopic(i),
             value_template: '{{ value_json.power | round(1) }}',
             unit_of_measurement: 'W',
