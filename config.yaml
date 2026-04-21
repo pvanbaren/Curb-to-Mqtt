@@ -1,11 +1,73 @@
-TOKEN_URL: "https://energycurb.auth0.com/oauth/token"
-CLIENT_ID: "iKAoRkr3qyFSnJSr3bodZRZZ6Hm3GqC3" # Official client_id from Curb #
-CLIENT_SECRET: "dSoqbfwujF72a1DhwmjnqP4VAiBTqFt3WLLUtnpGDmCf6_CMQms3WEy8DxCQR3KY" # Official client_secret from Curb #
-USERNAME: "YOUR-CURB-USERNAME" # Curb's login username/email information #
-PASSWORD: "YOUR-CURB-PASSWORD" # Curb's password information #
-AUDIENCE: "app.energycurb.com/api" 
 MQTT_BROKER_URL: "mqtt://YOUR-MQTT-BROKER:1883" # MQTT Broker URL, default port 1883 #
 MQTT_TOPIC: "home/curb/power" # You can change the topic to what ever you like it to be #
 MQTT_USERNAME: "YOUR-MQTT-USERNAME"  # Leave empty if no username is needed #
 MQTT_PASSWORD: "YOUR-MQTT-PASSWORD"  # Leave empty if no password is needed #
+HA_DISCOVERY_PREFIX: "homeassistant"
+DEVICE_NAME: "Curb Energy Monitor"
 DEBUG: false # Set to true to enable output and debug messages #
+
+# Per-device circuit names, keyed by device serial number (from /v3/samples/<serial>).
+# A device whose serial is not listed here falls back to DEFAULT_CIRCUIT_NAMES
+# (and, failing that, to "Circuit 1".."Circuit 18").
+DEVICES:
+  abcd1234:
+    CIRCUIT_NAMES:
+      - "Phase A"
+      - "A/C"
+      - "EV Charger"
+      - "Floor Heat Master"
+      - "Data Plugs"
+      - "Hood Vent"
+      - "Phase B"
+      - "Sauna"
+      - "Hot Tub"
+      - "Floor Heat Basement"
+      - "Lights Up"
+      - "Master Suite"
+      - "C1"
+      - "Washer"
+      - "Ice Maker"
+      - "Exercise"
+      - "Dishwasher"
+      - "Furnace"
+  dcba4321:
+    CIRCUIT_NAMES:
+      - "A1"
+      - "A2"
+      - "A3"
+      - "A4"
+      - "A5"
+      - "A6"
+      - "B1"
+      - "B2"
+      - "B3"
+      - "B4"
+      - "B5"
+      - "B6"
+      - "C1"
+      - "C2"
+      - "C3"
+      - "C4"
+      - "C5"
+      - "C6"
+
+# Optional shared defaults used for any device not listed under DEVICES.
+DEFAULT_CIRCUIT_NAMES:
+  - "A1"
+  - "A2"
+  - "A3"
+  - "A4"
+  - "A5"
+  - "A6"
+  - "B1"
+  - "B2"
+  - "B3"
+  - "B4"
+  - "B5"
+  - "B6"
+  - "C1"
+  - "C2"
+  - "C3"
+  - "C4"
+  - "C5"
+  - "C6"
