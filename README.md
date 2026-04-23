@@ -2,6 +2,13 @@
 # **Curb-to-Mqtt**
 
 ## Overview
+
+**_This method is now obsolete, and has been replaced by a direct Home Assistant integration._**
+
+_See the new [Curb integration](https://github.com/pvanbaren/ha-energycurb) for the latest instructions._
+
+_What follows are the now-obsolete instructions_
+
 Curb Energy is a company that provides real-time energy monitoring solutions. Their flagship product, the Curb energy monitor, is a hardware device that connects to an electrical panel to track electricity usage at the circuit level.
 
 As of February 24, 2026, Curb has discontinued their cloud support, rendering the existing devices nearly useless.

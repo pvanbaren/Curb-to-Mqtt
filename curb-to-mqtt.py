@@ -2,6 +2,10 @@
 """
 Samples sink + MQTT bridge for EnergyCurb hubs (multi-device).
 
+This script is now obsolete. See https://github.com/pvanbaren/ha-energycurb 
+for a Home Assistant integration which replaces this script's functionality
+with a more robust and featureful implementation.
+
 Accepts POST /v3/samples/<serial> on plain HTTP from any number of hubs,
 decodes the deflate + MessagePack body, appends a JSON line to
 samples-<serial>.jsonl, and republishes each hub's 18 per-circuit wattages
